@@ -1,0 +1,80 @@
+收听
+
+问题榜列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/listen/question
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	questionid: "12",
+	question: "如果生命只剩下最后的60秒，你想对这个世界说些什么？",
+	type: "1",
+	open: "1",
+	orderid: "6",
+	create_time: "2016-06-28 18:01:29",
+	answer: "9/2016070110248579.mp3",
+	answer_time: "2016-06-28 18:01:29",
+	answer_long: "30",
+	answer_userid: "8",
+	valid_time: "2000-01-01 00:00:00",
+	listened_count: "2",//该用户被多少人收听
+	question_userid: "9",
+	id: "8",//用户ID
+	user_nicename: "测试4",//用户昵称
+	title: "头衔美女",//用户头衔
+	listen_count: "1" //该问题已经被多少人听过
+}
+],
+pages: {
+	page: 1,//当前页
+	page_size: 10,//单页数量
+	page_count: 1 //总页数
+},
+referer: "",
+state: "success"
+}
+
+
+-----------------------------------------
+已经收听的用户列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/listen/users
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	id: "9",//用户id
+	user_nicename: "biao",//用户昵称
+	avatar: "2016070449515099.png",//用户头像
+	create_time: "2000-01-01 00:00:00",
+	title: "程序猿",//头衔
+	introduce: "php是最后的语音",//个人介绍
+	payment_amount: "1.00",//向我提交需要支付的金额
+	answer_count: "0",//回答问题数量
+	listen_count: "0"//收听人数
+}
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1,
+	total_size: "1"
+},
+referer: "",
+state: "success"
+}

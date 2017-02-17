@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="帮助"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<title>问题样式统一</title>
+	<link rel="stylesheet" type="text/css" href="./statics/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="./statics/css/questiontest.css">
+	<script src="./statics/js/base.js"></script>
+
+</head>
+<body>
+
+<!-- 问题样式1
+问题内容(点击跳转到具体问题页，最外层是a标签)
+回答者 名次、职位， 
+回答语音(有头像)
+ -->
+ <div>问题样式1</div>
+ <div class="questionstyle1 a-question">
+ 	<!-- 提问者 --> 
+ 	<div class="question-asker">
+ 		<a href="./tutor.html">
+ 			<div class="avatar avatarsmallsize">
+ 				<img class="avatarImg avatarsmallsize" src="./img/questionericon.jpg"></div>
+ 		</a>
+ 		<span class="question-name">陈炫</span>
+ 		<span class="question-price">￥3.88</span>
+ 	</div>
+ 	<div class="question-content">
+ 		<p>任老师您好，我是今年毕业生，对创业很感兴趣，应该是去自己想要的对自己创业有帮助的学校，还是去爸妈认为的好学校？</p>
+ 	</div>
+
+ 	<div class="question-respondent">陈海贤｜心理学博士，咨询师，一语道</div>
+ 	<!-- 回答的答案 --> 
+ 	<div class="question-answer">
+ 		<div class="avatar avatarsize">
+ 			<img class="avatarImg avatarsize" src="./img/questionericon.jpg"></div>
+ 		<!-- 语音 --> 
+ 		<div class="question-voice">
+ 			<span class="bubble">
+ 				<!-- bubble-red --> 
+ 				<span class="bubble-tail"></span>
+ 				<span class="wave3"></span>
+ 				<span class="bubble-price">限时免费听</span>
+ 			</span>
+ 		</div>
+ 		<div class="question-visitor">
+ 			<span>听过</span>
+ 			<span>92</span>
+ 		</div>
+ 	</div>
+ 	<!-- 问题状态 --> 
+ 	<dir class="question-status">
+ 		<span class="praise"> <i class="like-icon like-icon-gray"></i>
+ 			<span></span>
+ 			<span>10</span>
+ 		</span>
+ 		<span class="count" >
+ 			<span >听过</span>
+ 			<span d>111</span>
+ 		</span>
+ 		<span class="date" >1天前</span>
+ 	</dir>
+ </div>
+
+
+
+<!-- 问题样式2
+上面提问信息（头像 问题描述 价格）（点击跳转问题详情页）
+下面回答这的语音回答（点击支付）
+ -->
+ <hr/> 
+ <div>问题样式2</div>
+ <div class="questionstyle2">
+ 	<div class="a-question">
+ 		<div class="question-asker">
+ 			<a href="./tutor.html" class="left">
+ 				<div class="avatar avatarsize">
+ 					<img class="avatarImg avatarsize" src="./img/questionericon.jpg"></div>
+ 			</a>
+ 			<a href="./question_answer.html">
+ 				<div class="question-content">
+ 					<p>在飞行中，驾驶舱里看到最奇妙在飞行中，驾驶舱里看到最奇</p>
+ 					<p>
+ 						<span class="question-price">￥3.88</span>
+ 					</p>
+ 				</div>
+ 			</a>
+ 		</div>
+ 	</div>
+ 	<div class="question-answer">
+ 		<div class="avatar avatarsize">
+ 			<img class="avatarImg avatarsize" src="./img/questionericon.jpg"/> 
+ 		</div>
+ 		<a href="#">
+ 			<div class="question-voice">
+ 				<span class="bubble bubble-red">
+ 					<span class="bubble-tail"></span>
+ 					<span class="wave3"></span>
+ 					<span class="bubble-price">1元偷偷听</span>
+ 				</span>
+ 			</div>
+ 		</a>
+ 		<div class="question-duration">
+ 			<span >60"</span>
+ 		</div>
+ 	</div>
+ 	<div class="question-status">
+ 		<span class="count" > <i class="like-icon like-icon-gray"></i>
+ 			<span></span>
+ 			<span>10</span>
+ 		</span>
+ 		<span class="count" >
+ 			<span >听过</span>
+ 			<span d>111</span>
+ 		</span>
+ 		<span class="date" >1天前</span>
+ 	</div>
+ </div>
+ <div class="questionstyle2">
+ 	<div class="a-question">
+ 		<div class="question-asker">
+ 			<a href="./tutor.html" class="left">
+ 				<div class="avatar avatarsize">
+ 					<img class="avatarImg avatarsize" src="./img/questionericon.jpg"></div>
+ 			</a>
+ 			<a href="./question_answer.html">
+ 				<div class="question-content">
+ 					<p>任老师您好，我是今年毕业生，对创业很感兴趣，应该是去自己想要的对自己创业有帮助的学校，还是去爸妈认为的好学校？</p>
+ 					<p>
+ 						<span class="question-price">￥3.88</span>
+ 					</p>
+ 				</div>
+ 			</a>
+ 		</div>
+ 	</div>
+ 	<div class="question-answer">
+ 		<div class="avatar avatarsize">
+ 			<img class="avatarImg avatarsize" src="./img/questionericon.jpg"/> 
+ 		</div>
+ 		<a href="">
+ 			<div class="question-voice">
+ 				<span class="bubble bubble-red">
+ 					<span class="bubble-tail"></span>
+ 					<span class="wave3"></span>
+ 					<span class="bubble-price">1元偷偷听</span>
+ 				</span>
+ 			</div>
+ 		</a>
+ 		<div class="question-duration">
+ 			<span >60"</span>
+ 		</div>
+ 	</div>
+ 	<div class="question-status">
+ 		<span class="count" > <i class="like-icon like-icon-gray"></i>
+ 			<span></span>
+ 			<span>10</span>
+ 		</span>
+ 		<span class="count" >
+ 			<span >听过</span>
+ 			<span d>111</span>
+ 		</span>
+ 		<span class="date" >1天前</span>
+ 	</div>
+ </div>
+
+<hr/>
+<!-- 问题样式3
+上面没有提问信息（头像  价格），只有问题描述（点击跳转到回答问题详情页）
+下面回答这的语音回答（点击支付）
+ -->
+ <div>问题样式3</div>
+ <div class="questionstyle1 a-question">
+ 	<!-- 提问者 --> 
+ 	<a href="./question_answer.html">
+ 		<div class="question-content">
+ 			<p>您觉得在高考志愿填报中，很重要但容易被忽视的因素有哪些？</p>
+ 		</div>
+ 	</a>
+ 	<div class="question-respondent">陈海贤｜心理学博士，咨询师，一语道</div>
+ 	<!-- 回答的答案 --> 
+ 	<div class="question-answer">
+ 		<div class="avatar avatarsize">
+ 			<img class="avatarImg avatarsize" src="./img/questionericon.jpg"></div>
+ 		<!-- 语音 --> 
+ 		<a href="#">
+ 			<div class="question-voice">
+ 				<span class="bubble">
+ 					<!-- bubble-red --> 
+ 					<span class="bubble-tail"></span>
+ 					<span class="wave3"></span>
+ 					<span class="bubble-price">限时免费听</span>
+ 				</span>
+ 			</div>
+ 		</a>
+ 		<div class="question-visitor">
+ 			<span>听过</span>
+ 			<span>92</span>
+ 		</div>
+ 	</div>
+ 	<!-- 问题状态 --> 
+ 	<dir class="question-status">
+ 		<span class="praise"> <i class="like-icon like-icon-gray"></i>
+ 			<span></span>
+ 			<span>10</span>
+ 		</span>
+ 		<span class="count" >
+ 			<span >听过</span>
+ 			<span d>111</span>
+ 		</span>
+ 		<span class="date" >1天前</span>
+ 	</dir>
+ </div>
+
+
+
+
+ <br/>
+ <br/>
+ <hr/>
+<!--  
+整块超链接按钮 
+里面布局不一(如下例子) 三行 从上往下
+-->
+<div>整块超链接按钮样式1</div>
+<div>整块超链接按钮 纯文本(上中下)</div>
+<div class="linkContentModelContainer">
+	<a class="linkContentModel linkArrowIcon" href="#">
+		<div class="header">
+			<p class="responder">
+				<span class="nicename">王峰</span>
+				<span class="gap">|</span>
+				<span class="job">歌者，创作者等</span>
+				<span>回答了</span>
+			</p>
+		</div>
+		<div class="content">
+			<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学66666</p>
+		</div>
+		<div class="footer clearfix">
+			<span class="left">2天前</span>
+			<span class="right">
+				听过 <strong>39</strong>
+			</span>
+		</div>
+	</a>
+</div>
+<br>
+<hr>
+<div>整块超链接按钮样式2</div>
+<div>整块超链接按钮 (左（有头像）中（三行文字）)</div>
+<div class="linkContentModelContainer">
+	<a class="linkContentModel linkArrowIcon" href="./figurebooklist.html">
+		<div class="leftcontent">
+			<div class="icon">
+ 			   <img class="" src="./img/book_recommend_icon.png">
+ 		    </div>
+		</div>
+		<div class="centercontent">
+			<p class="name">这些机构都入驻啦</p>
+			<p class="count">
+				<span>29</span>
+				<span>答主</span>
+			</p>
+		</div>
+	</a>
+</div>
+
+<br>
+<hr>
+<div>整块超链接按钮样式3</div>
+<div>整块超链接按钮 (左（有头像）中（三行文字）右（按钮）)</div>
+<div class="linkContentModelContainer">
+	<a class="linkContentModel inlineblock" href="./figurebooklist.html">
+		<div class="leftcontent">
+			<div class="avatar avatarsize">
+ 			   <img class="avatarImg avatarsize" src="./img/questionericon.jpg">
+ 		    </div>
+		</div>
+		<div class="centercontent">
+			<p class="name">这些机构都入驻啦</p>
+			<p class="count">
+				<span>29</span>
+				<span>答主</span>
+			</p>
+		</div>
+	</a>
+	<div class="rightcontent">
+		<div class="">
+			<a href="javascript:;" class="unprocessedbtn "><!-- processedbtn -->
+				<span class="icon"></span>
+				<span>收听</span>
+			</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

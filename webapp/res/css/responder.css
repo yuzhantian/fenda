@@ -1,0 +1,251 @@
+.question-form {
+	padding:0 .9rem .9rem;
+	background:#fff
+}
+.question-form .text-wrap {
+	padding:.55rem .725rem;
+	background:#fafafa;
+	border:1px solid #cacaca;
+	border-radius:.2rem;
+	position:relative
+}
+.question-form textarea {
+	display:block;
+	width:100%;
+	height:3rem;
+	background:#fafafa;
+	border:none;
+	font-size:.75rem;
+	line-height:.9rem;
+	outline:none;
+	box-shadow:none;
+	-webkit-appearance:none;
+	resize:none
+}
+.question-form .counter {
+	position:absolute;
+	bottom:.3rem;
+	right:.3rem;
+	font-size:.75rem;
+	color:#999
+}
+.question-form .tips {
+	1padding:.3rem 0 0 0.5rem;
+	font-size:.65rem;
+	line-height:2.2rem;
+	color:#999;
+	1margin-left:-1rem
+}
+.question-form .tips .read-me {
+	display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    text-indent: -9999px;
+    background: url(data:image/png;base64,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) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    vertical-align: text-bottom
+}
+.question-form .price {
+	text-align:center;
+	color:#f85f48
+}
+.question-form .btn-panel {
+	padding-top:.5rem;
+	text-align:center
+}
+.question-form .btn-submit{
+	 display: inline-block;
+    line-height: 2.2rem;
+    width: 4.75rem;
+    background: #F85F48;
+    border: 1px solid #F85F48;
+    font-size: .75rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.header-bar {
+	padding:.6rem;
+	background:#f4f4f4;
+	overflow:hidden;
+	color:#999;
+	font-size:.65rem
+}
+.header-bar .left, .question .left {
+	float:left
+}
+.header-bar .right {
+	float:right
+}
+.order-btn {
+	color:#999
+}
+.order-btn.current {
+	color:#f85f48
+}
+
+
+
+#detail .selfinfo{
+	text-align:center;
+	padding:.9rem;
+	padding-bottom:0.625rem;
+	background:#fff;
+	position:relative;
+}
+#detail .selfinfo .icon{
+	display: inline-block;
+}
+#detail .selfinfo .avatar.avatarsize{
+    width: 2.6rem;
+    height: 2.6rem;
+}
+#detail .selfinfo .verified.verifiedsize{
+	width:.883rem;
+	height:.883rem;
+}
+#detail .selfinfo .tutor-name{
+	line-height:1.25rem;
+	font-size:.9rem;
+	color:#333;
+	font-weight:normal;
+	padding-top:.5rem;
+}
+#detail .selfinfo .tutor-title{
+	margin-bottom:0.625rem;
+	line-height:1.05rem;
+	font-size:.75rem;
+	color:#999;
+}
+#detail .selfinfo .tutor-desc{
+	text-align: left;
+	line-height: 1.05rem;
+	color: #333;
+	font-size:.75rem;
+}
+#detail .selfinfo span.tutor-num{
+	float:right;
+	color:#999;
+	display:inline-block;
+	line-height:1.35rem;
+	height:1.35rem;
+}
+#detail .selfinfo .content{
+	overflow:hidden;
+	font-size:.75rem;
+	margin-top:.5rem;
+}
+#detail .selfinfo .listen-btn{
+	float: right;
+    display: inline-block;
+    border-radius: .2rem;
+    line-height: 1.35rem;
+    height: 1.3rem;
+    text-align: center;
+    width: 3.5rem;
+    border: 1px solid #F85F48;
+    background: #F85F48;
+    color: #fff;
+    text-decoration: none;
+    font-size: .7rem;
+    margin-left: .5rem; 
+    cursor: pointer;
+}
+
+#detail .selfinfo  .ready-listen-btn{
+    float: right;
+    display: inline-block;
+    border-radius: .2rem;
+    line-height: 1.35rem;
+    height: 1.3rem;
+    text-align: center;
+    width: 3.5rem;
+    border: 1px solid #B7A9A9;
+    background: #C3D8A1;
+    color: #5A4040;
+    text-decoration: none;
+    font-size: .7rem;
+    margin-left: .5rem; 
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+#detail .selfinfo .content .icon{
+	 display:inline-block;
+	 vertical-align:middle;
+	 width:.7rem;
+	 height:.7rem;
+	 margin-right:.2rem;
+	 background-size:.7rem .7rem;
+	 background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAAXNSR0IArs4c6QAABCVJREFUaAXtmj1rFFEUhrOCgRAjiBIxGIQEtFcLK8VfoIkg8YeIlSZoZfAXaKlGJSCmECyN1ho0oqSIhWKSxsZ0FsbnXWZ3MzP3zOedmSzkwMvMnHPvec+5c7/m7rYGPMnOzs4Erq6A82AswAmuIyBJtjFugo0AH7gutVqtda7NCkmNgrvgM/AtqziU79Has4R0GNwGf0DVsg3BLDhUS6IQTYFNULdsQThdaZIQ6K39qzuzXXzingUtr4nicAi8AHtFFglkyFuSOMua3EfK3gGXwWmQOm5UJiirOqorH1lESZZ/kzgRaZqI7IyvFpUvIJ9pMleKE+/TQP3eku8YLpQiSags30Aclii2awkubBMVh0HSbPkW+zHbgx8LHEeBuCzR7Jo6FGLRUGnW8ohehAdjlSpSiCvg5OKUuVzUuNAORQusS9RlKn9z0YDFCazuqliPR+uYzxTWFsmSysacGVBgICCNSUvupdXv2vGwanhZ7BZq6Ia4rNn1S6aQcDBpJCe1t6UgUzCOQoohIb7JaJUDUQXPVx06qVb4hFkzbLWpgxhWDMJY7K4EzxqVXxn6JtRLBum5qN6VoD5WXfLepWxI987g1Qd2SPIk+CtUs9kHKxbr5fSiZQBb61/+3ULPrdc7YhwxJhodf4QkthtXxVCJ4IHBHSvrKleXLmucri5aV4y18OwnWEszV0iy/wYrbNxaXPfzG/yapYX6OcGLJKhj/nxiLKBJ6g2MC+BkPqbypeE8DJZBV1K9dkvmv/lNlSaS1Jnt6064ZoIUOADmOwULXhdMgoIG4hgM4lJPEe5Lt9sdzzqzeQ6cu7B2WWxlk5N/axO8O55c90Zc81EnlNMLehTVt58x6AcVL+IkKKEkKNfRpX5LzCQtHOj47xuIfe5n8hAp5HtTrlaPULQfs/JomZgCVnI/sd0AY3Io4f4UeAP6Q2ggTfEu+YHyiCsL9OOuCtK5ypfRlebBwZrhZCYpMKPOnktQXdT6zF9OSrBfbJpknK0ejDczj6L1TIeGoSxPP+9FjSYJqxtLkDfT2aG41jm9uLaEw+09dezGVT61cRlsrIsqAMK92Qu5krv5JhPUbiR2UOs5zc3GuqjnREx3TSb4xIzKn+HxgDFInUvHbt6i9To+NAFoHILEScbiSdGHJhkdd7uO5bX/1L8AnSIClyFt/XTVSdKV5VEXtT49LiUR94tNCVoHN+o+1ma79qOJog2qBK0fNsexfSLJGdCdzrmX/mFRwrrraR3U+YY+eCd8kO+5MUhAf0ms6h2Fj7Yr5ENddIAkX3J5UMhDuJI1YYVL1fjUTjDgu8W1bJJVfENuOdrDpXMUc6gYk/qH4TrIK5Uc/BKE6zgzdmzoSMVW4VQHqdfBU6AjDet3e0ztw9hnXCtZOvDb2fFsBFztzyA7+rDlPzjkppMbI4I1AAAAAElFTkSuQmCC); 
+}
+
+
+
+/***热门 新晋榜 才华begin*/
+.leaders {
+    list-style: none;
+    margin-bottom: 4rem
+}
+
+.leaders .a-leader {
+    overflow: hidden;
+    padding: .85rem .75rem;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: -1px;
+    background-color: #FFF;
+}
+
+.leaders .avatarsbigsize{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.leaders .a-leader a {
+    display: block
+}
+
+.leaders .a-leader .leader-content {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+    margin-left: 1rem;
+}
+
+.leaders .a-leader .leader-nickname {
+    color: #3f3f3f;
+    font-size: .8rem;
+    line-height: 1.1rem
+}
+
+.leaders .a-leader .leader-title {
+    color: #3f3f3f;
+    font-size: .7rem;
+    line-height: 1rem
+}
+
+.leaders .a-leader .leader-summary {
+    font-size: .7rem;
+    line-height: 1rem
+}
+
+.leaders .a-leader .leader-summary .leader-answers_count {
+    margin-right: 5px
+}
+.leaders .a-leader .leader-summary .leader-answers_count {
+    margin-right: 5px
+}
+.leaders .loading {
+    font-size: .65rem;
+    color: #999;
+    text-align: center;
+    padding-top: 1rem;
+    background: #f5f5f5
+}
+/***热门 新晋榜end*/

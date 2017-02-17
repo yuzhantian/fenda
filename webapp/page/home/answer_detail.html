@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我答</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<link rel="stylesheet" type="text/css" href="../../res/css/base.min.css">
+	<link rel="stylesheet" type="text/css" href="../../res/css/home.min.css">
+</head>
+<body>
+	<p class="answer_tip font12 txt_gray textc">问题有效期48小时，过期后付款讲全额退还对方</p>
+	<div class="list_box">
+		<p>
+			<img src="../../res/img/questionericon.jpg">
+			<span>生命分答</span>
+			<span class="fr">
+				<span class="txt_orange">生命分答问所有人</span>
+			</span>
+		</p>
+		<p class="margin_top1 font14">如果生命只剩下最后的60秒，你想对这个世界说些什么？</p>
+		<p class="margin_top1"><span class="txt_gray font12">18分钟前</span></p>
+	</div>
+	<p class="answer_tip font12 txt_blue textc">试着回答这个问题，距离成为知识网红还差60"</p>
+	<div class="record_wrapper textc">
+		<p><img src="../../res/img/record.jpg" alt=""><span class="record">重录</span></p>
+		<p class="margin_top1"><span>点击开始录音，最多可录制60"</span></p>
+		<p class="margin_top1"><span class="btn btn_gray">确定发送</span></p>
+	</div>
+	<script type="text/javascript" src="http://js.miaozhen.com/wx.1.0.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// setWXConfig();
+			function setWXConfig() {
+			    $.ajax({
+			        type:"post",
+			        url:"http://m.clean-soft.cn/oauth/getShareParam.action",
+			        data: {"url":location.href,"callback":"?"},
+			        dataType: "jsonp",
+					jsonp: "callback",  
+					jsonpCallback:"handler",
+			        async:false,
+			        success:function(data){
+			        	wx.config({
+			        	    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			        	    appId: data.appid, // 必填，公众号的唯一标识
+			        	    timestamp: data.timestamp, // 必填，生成签名的时间戳
+			        	    nonceStr: data.nonceStr, // 必填，生成签名的随机串
+			        	    signature: data.signature,// 必填，签名，见附录1
+			        	    jsApiList: ['checkJsApi', 'startRecord','stopRecord','onVoiceRecordEnd','playVoice','uploadVoice','downloadVoice','onVoicePlayEnd','stopVoice'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+			        	});
+			        }
+			    });
+			}
+			$('.record_wrapper').find('img').click(function(){
+				$('.record').addClass('record_orange');
+				$('.record_wrapper').find('.btn').removeClass('btn_gray').addClass('btn_orange');
+				wx.startRecord();
+			});
+			$('.record').click(function(){
+				$('.record').removeClass('record_orange');
+				$('.record_wrapper').find('.btn').removeClass('btn_orange').addClass('btn_gray');
+			});
+		});
+	</script>
+</body>
+</html>

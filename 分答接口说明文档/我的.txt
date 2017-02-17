@@ -1,0 +1,206 @@
+我的
+
+-----------------------------------------
+开通我的分答
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/my/edit_save
+ajax请求，类型post
+请求的参数：
+{
+	"userid":"", //空位开通 有值为编辑用户信息
+	"openid":"o_Xftsw28atvUsIHOVnctia07oUc", //微信编号
+	"title":"头衔", //头衔
+	"introduce":"个人介绍", //个人介绍,
+	"payment_amount":1,//提问金额
+	"continue_ask":1 //是否允许追问 1允许 0不允许
+
+}
+
+数据返回：
+{
+info: "保存成功",
+status: 1,
+url: "",
+referer: "",
+state: 1
+}
+
+{
+info: "保存失败",
+status: 0,
+url: "",
+referer: "",
+state: "success"
+}
+
+
+-----------------------------------------
+我问列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/my/question
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	questionid: "12",//
+	question: "如果生命只剩下最后的60秒，你想对这个世界说些什么？",
+	type: "1",
+	open: "1",
+	orderid: "6",
+	create_time: "2016-06-28 18:01:29",
+	answer: "9/2016070110248579.mp3",
+	answer_time: "2016-06-28 18:01:29",
+	answer_long: "30",
+	answer_userid: "8",
+	valid_time: "2000-01-01 00:00:00",
+	listened_count: "2",//收听人数
+	question_userid: "9",//提问人的ID
+	id: "9",//用户ID
+	user_nicename: "biao",//用户昵称
+	title: "程序猿",//用户头衔
+	avatar: "2016070449515099.png"//用户头像
+}
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+},
+referer: "",
+state: "success"
+}
+
+
+-----------------------------------------
+我答列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/my/answer
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	questionid: "11",
+	question: "刚看完分答发布会直播，你在台上表现的很得体啊，难道没有感觉到紧张吗，怎么面对上台前的紧张呢？",
+	type: "1",
+	open: "1",
+	orderid: "8",
+	create_time: "2016-06-28 18:01:29",
+	answer: "9/2016070110248579.mp3",
+	answer_time: "2016-06-28 18:01:29",
+	answer_long: "30",
+	answer_userid: "9",
+	valid_time: "2000-01-01 00:00:00",
+	listened_count: "2",
+	payment:0.01,//提问付款金额
+	question_userid: "8",
+	id: "8",
+	user_nicename: "测试4",
+	title: "头衔美女",
+	avatar: "2016062756529810.png"
+},
+……
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+},
+referer: "",
+state: "success"
+}
+
+
+-----------------------------------------
+我听列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/my/listen
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	questionid: "11",
+	question: "刚看完分答发布会直播，你在台上表现的很得体啊，难道没有感觉到紧张吗，怎么面对上台前的紧张呢？",
+	type: "1",
+	open: "1",
+	orderid: "8",
+	create_time: "2016-06-28 18:01:29",
+	answer: "9/2016070110248579.mp3",
+	answer_time: "2016-06-28 18:01:29",
+	answer_long: "30",
+	answer_userid: "9",
+	valid_time: "2000-01-01 00:00:00",
+	listened_count: "2",
+	question_userid: "8",
+	id: "8",
+	user_nicename: "测试4",
+	title: "头衔美女",
+	avatar: "2016062756529810.png"
+}
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+},
+referer: "",
+state: "success"
+}
+
+
+
+
+----------------------------
+回答问题，录音并确定发送
+//请求的url
+
+将微信语音上传到本地服务器的方法说明：
+调用JSSDK上传语音到微信服务器上后获取到media_id的值yyyyyyyyyyyyyyyyy,将media_id的值提交到此url
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/my/upload_media
+范例：
+<form method="post" action="{:U('wechat/my/upload_media')}">
+	<input type="hidden" name="media_id" value="yyyyyyyyyyyyyyyyy" />
+	<input type="hidden" name="question_id" value="3" />
+	<input type="hidden" name="answer_long" value="30" />
+	<input type="submit" value="确定发送" />
+</form>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	wx.config({$wx_config});
+</script>
+
+
+服务器返回：
+成功：
+{
+"info":"语音保存成功",//描述
+"status":1,//状态
+}
+
+失败：
+{
+"info":"语音保存失败",//描述
+"status":0,//状态
+} -->

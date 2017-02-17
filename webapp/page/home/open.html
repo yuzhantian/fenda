@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>开通我的分答主页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<link rel="stylesheet" type="text/css" href="../../res/css/base.min.css">
+	<link rel="stylesheet" type="text/css" href="../../res/css/home.min.css">
+</head>
+<body>
+	<div class="textc padding_top2">
+		<img class="avatar margin_top2" src="../../res/img/questionericon.jpg">
+		<span>一直在路上</span>
+	</div>
+	<div class="box box_open margin_top2">
+		<p>你的头衔（18个字以内）</p>
+		<textarea class="txt_gray" placeholder="运营经理；电台DJ；Google早期员工；周游列国的斜杠青年；心理咨询师......" maxlength="18"></textarea>
+	</div>
+	<div class="box box_open">
+		<p>介绍下自己吧（100个字以内）</p>
+		<textarea class="txt_gray" placeholder="关于这些，尽情问我；投资理财、赢取白富美；如何优雅的参加前任的婚礼；和异性出差时如何管理自我冲动......或者给你唱个晚安小曲吧。" maxlength="100"></textarea>
+	</div>
+	<div class="font14 item_open">
+		<span>向我提问需要支付</span>
+		<input type="number" name="" placeholder="&yen;1-100">元
+	</div>
+	<div class="font14 item_open">
+		<span>接受免费向我追问<span class="choose_ask choosen"><span class="choose_inner"></span></span></span>
+		<span class="fr askagain_click">什么是追问？</span>
+	</div>
+	<div class="textc">
+		<p><span class="btn btn_orange">开通我的分答</span></p>
+		<p class="font12"><span class="choose_pro choosen"></span>我已阅读并同意<span class="txt_orange protocol_click">《分答用户协议》</span></p>
+	</div>
+	<div class="dialog askagain hidden">
+		<div class="dialog_inner">
+			<div class="dialog_body">
+				<p>您回答一个问题后，提问者可以向您免费“追问”。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+			</div>
+			<div class="dialog_footer">知道了</div>
+		</div>
+	</div>
+	<div class="dialog protocol hidden">
+		<div class="dialog_inner">
+			<div class="dialog_header">分答用户协议</div>
+			<div class="dialog_body">
+				<p>您回答一个问题后，提问者可以向您免费“追问”。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p><p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+				<p class="margin_top1">开启免费追问，进一步增加您与提问者的交流机会，使问答体验更加完整。</p>
+			</div>
+			<div class="dialog_footer">我已阅读并同意</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".choose_ask, .choose_pro").click(function(){
+				if($(this).hasClass('choosen')){
+					$(this).removeClass('choosen');
+				}else{
+					$(this).addClass('choosen');
+				}
+			})
+			$(".askagain_click").click(function(){
+				$(".askagain").removeClass("hidden");
+			});
+			$(".dialog").click(function(){
+				$(this).addClass("hidden");
+			});
+			$(".protocol_click").click(function(){
+				$(".protocol").removeClass("hidden");
+			});
+			$(".protocol .dialog_footer").click(function(){
+				$(".choose_pro").addClass('choosen');
+			});
+		});
+	</script>
+</body>
+</html>

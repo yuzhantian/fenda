@@ -1,0 +1,386 @@
+﻿热门
+
+问题榜列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/question
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	questionid: "11",//问题id
+	question: "刚看完分答发布会直播，你在台上表现的很得体啊",//问题内容
+	type: "1",//问题类型：1一元偷偷听；0限时免费听
+	open: "1",
+	orderid: "8",
+	create_time: "2016-06-28 18:01:29",//创建时间
+	answer: "9/2016070110248579.mp3",
+	answer_time: "2016-06-28 18:01:29",//创建回答的时间
+	answer_long: "30",//回答的语音长度
+	answer_userid: "9",//需要回答问题的人id
+	valid_time: "2000-01-01 00:00:00",//有效时间
+	listened_count: "2",//偷偷听过的人数统计
+	like_count:"10",//点赞人数
+	question_userid: "8",//提问人的id
+	id: "9",//用户id
+	user_nicename: "biao",//用户昵称
+	title: "程序猿",//用户头衔
+	avatar: "2016070449515099.png"　//用户头像 前端拼接头像urc="/data/upload/avatar/2016070449515099.png"
+        media:""录音资源路径，有值时， 可击播放状态
+},
+……
+],
+pages: {
+	page: 1,//当前页
+	page_size: 10,//单页数量
+	page_count: 1 //总页数
+},
+referer: "",
+state: "success" //状态 成功
+}
+
+
+----------------------------------------------------------
+新晋榜列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/users
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	id: "8", //用户id
+	user_nicename: "测试4", //用户昵称
+	avatar: "2016062756529810.png", //头像
+	sex: "0", //性别
+	create_time: "2000-01-01 00:00:00", //注册时间
+	title: "头衔美女", //头衔
+	introduce: "简介免了", //个人介绍
+	payment_amount: "5.00", //向我提问需要支付的金额
+	answer_count: "0", //回答问题的数量
+	listen_count: "2" //收听人数
+},
+……
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+},
+referer: "",
+state: "success"
+}
+
+
+----------------------------------------------------------
+才华榜列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/talent
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+
+数据返回：
+{
+list: [
+{
+	id: "8", //用户id
+	user_nicename: "测试4", //用户昵称
+	avatar: "2016062756529810.png", //头像
+	sex: "0", //性别
+	create_time: "2000-01-01 00:00:00", //注册时间
+	title: "头衔美女", //头衔
+	introduce: "简介免了", //个人介绍
+	payment_amount: "5.00", //向我提问需要支付的金额
+	answer_count: "0", //回答问题的数量
+	listen_count: "2" //收听人数
+},
+……
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+},
+referer: "",
+state: "success"
+}
+
+
+
+----------------------------------------------------------
+向某人提问框“写好了”按键下面的用户已经回答过的列表（http://lamp.chinacloudapp.cn/index.php/wechat/hot/item/id/8）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/my_answer
+ajax请求，类型get
+请求的参数：
+{
+	"id":13,//用户id
+	"page":1, //当前页
+	"page_size":10, //单页数量
+	"sort":"new" //排序 new最新 | normal 默认
+}
+
+数据返回：
+{
+list: [
+{
+	questionid: "11",
+	question: "刚看完分答发布会直播，你在台上表现的很得体啊",
+	type: "1",
+	open: "1",
+	orderid: "8",
+	create_time: "2016-06-28 18:01:29",
+	answer: "9/2016070110248579.mp3",
+	answer_time: "2016-06-28 18:01:29",//语音创建的时间
+	answer_long: "30",//语音时长
+	answer_userid: "9",//回答人的Id
+	valid_time: "2000-01-01 00:00:00",
+	listened_count: "2",　//收听人数
+	like_count:"10",//点赞人数
+	question_userid: "8",　//提问人ID
+	id: "8",　//提问人ID
+	avatar: "2016062756529810.png",　//提问人头像
+	c_id: "9",　//回答人ID
+	c_avatar: "2016070449515099.png",　//回答人头像
+	payment: "5.00"　//回答问题需要支付的金额
+},
+……
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1,
+	total_size: "2",
+	total_money: 1
+},
+referer: "",
+state: "success"
+}
+
+
+----------------------------------------------------------
+收听和取消收听（http://lamp.chinacloudapp.cn/index.php/wechat/hot/item/id/8）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/listen
+ajax请求，类型get
+请求的参数：
+{
+	"id":1, //用户id
+	"listen":"y" //收听y ,取消收听n
+}
+
+数据返回：
+{
+info: "操作成功",
+status: 1,
+url: "",
+referer: ""
+}
+
+{
+info: "操作失败",
+status: 0,
+url: "",
+referer: ""
+}
+
+----------------------------------------------------------
+点赞
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/like
+ajax请求，类型get
+请求的参数：
+{
+	"questionid":1, //问题id
+	"answerid":1 //回答表id
+}
+
+数据返回：
+//成功
+{
+info: "操作成功",
+status: 1,
+url: "",
+referer: ""
+}
+
+//失败
+{
+info: "先听听在点赞吧",
+status: 0,
+url: "",
+referer: ""
+}
+
+----------------------------------------------------------
+限时免费听 点击播放语音（http://lamp.chinacloudapp.cn/index.php/wechat/hot/details/id/11）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/media_file
+类型get
+请求的参数：
+{
+	"id":11, //问题id
+	"answerid":13 //回答表的id
+}
+
+数据返回：
+//成功
+语音文件二进制流
+//错误
+{
+info: "获取语音失败", //错误提示：获取语音失败 ,限时免费听已经结束
+status: 0,//状态 1正常 ，0错误
+url: "",
+referer: "",
+}
+
+
+
+************请使用新的接口，以下作废*********************↓↓↓↓↓↓↓↓
+
+向某人提问 写好了 提交数据（http://lamp.chinacloudapp.cn/index.php/wechat/hot/item/id/8）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/pay/question
+ajax请求，类型post
+请求的参数：
+{
+	"userid":1, //用户id
+	"question":"问题内容" //问题内容
+	"open":1" //公开提问
+}
+
+数据返回：
+{
+info: "提问成功",
+status: 1,
+url: "",
+referer: ""
+}
+
+{
+info: "提问失败",
+status: 0,
+url: "",
+referer: ""
+}
+
+----------------------------------------------------------
+1元偷偷听 点击播放语音（http://lamp.chinacloudapp.cn/index.php/wechat/hot/details/id/11）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/pay/eavesdrop
+ajax请求，类型get
+请求的参数：
+{
+	"questionid":11, //问题id
+}
+
+数据返回：
+{
+info: "支付金额￥1，开始偷偷听",//成功提示
+status: 1,//状态
+url: "",
+referer: "http://lamp.chinacloudapp.cn/index.php/wechat/hot/details/id/11", //跳转链接
+}
+
+{
+info: "偷偷听失败",//失败提示
+status: 0,//状态
+url: "",
+referer: "http://lamp.chinacloudapp.cn/index.php/wechat/hot/details/id/11",
+}
+
+
+************请使用新的接口，以上作废*********************↑↑↑↑↑↑↑
+
+
+
+
+
+
+-----------------------------------
+ 新的微信支付接口 20160801
+-----------------------------------
+
+向某人提问 写好了 提交数据（http://lamp.chinacloudapp.cn/index.php/wechat/hot/item/id/8）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/hot/save_question
+ajax请求，类型post
+请求的参数：
+{
+	"userid":1, //用户id
+	"question":"问题内容" //问题内容
+	"open":1" //公开提问
+}
+
+数据返回：
+{
+info: "保存问题成功",
+status: 1,
+url: "http://lamp.chinacloudapp.cn/index.php/wechat/pay/order?type=1&questionid=8", 
+//保存成功后页面跳转到此URL，进入支付页面 （参数questionid的值为问题的ID。参数type的值：0其他付款，1提问付款，2偷偷听付款，3打赏付款）
+}
+
+{
+info: "保存问题失败", //错误提示：请选择用户;问题不能为空喔;不能自问自答喔
+status: 0,
+url: "",
+}
+
+----------------------------------------------------------
+1元偷偷听 点击播放语音（http://lamp.chinacloudapp.cn/index.php/wechat/hot/details/id/11）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/pay/order （微信支付页面）
+页面跳转
+请求的参数：
+{
+	"type":2, //0其他付款，1提问付款，2偷偷听付款，3打赏付款
+	"questionid":11, //问题id
+}
+
+数据返回：
+//等待支付
+页面显示 。支付成功和取消支付时，前端控制跳转回问题详情页
+
+{
+info: "支付金额必须大于0",//错误信息:支付金额必须大于0;获取微信用户ID失败;订单信息保存失败;交易信息保存失败
+status: 0,//状态
+url: "",
+}
+
+----------------------------------------------------------
+金额打赏
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/pay/order （微信支付页面）
+页面跳转
+请求的参数：
+{
+	"type":3, //0其他付款，1提问付款，2偷偷听付款，3打赏付款
+	"userid":13, //收款人ID
+	"reward":0.01, //打赏金额
+}
+
+数据返回：
+//等待支付
+页面显示 。支付成功和取消支付时，前端控制跳转回用户详情页
+
+{
+info: "支付金额必须大于0",//错误信息:支付金额必须大于0;获取微信用户ID失败;订单信息保存失败;交易信息保存失败
+status: 0,//状态
+url: "",
+}

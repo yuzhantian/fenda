@@ -1,0 +1,7 @@
+全局异步请求的时候返回错误提示信息
+{
+info: "wechat_scan_next_step",//错误信息: wechat_scan_next_step(微信扫一扫进入下一步) , again_wechat_auth_enter(重新微信授权进入)
+url:"/index.php/wechat/index/oauth_redirect",//返回“again_wechat_auth_enter”时，将当前页面跳转到此url重新刷新用户登录信息
+status: 0,//状态：1(正常) ，0(错误)
+}
+

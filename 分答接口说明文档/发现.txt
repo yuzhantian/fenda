@@ -1,0 +1,204 @@
+
+人物列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/find/person
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+返回：
+{
+list: [
+{
+	categoryid: "2",//分类id
+	title: "网络红人",//名称
+	describe: "红红红",//详细描述
+	user_count: "2"//包含用户数量
+},
+……
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+}
+}
+
+
+--------------------------------
+问题列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/find/problem
+ajax请求，类型get
+请求的参数：
+{
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+返回：
+{
+list: [
+{
+	categoryid: "2",//分类id
+	title: "娱乐八卦",//名称
+	describe: "娱乐圈新鲜事",//详细描述
+	question_count: "2"//包含的问题数量
+},
+……
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+}
+
+}
+
+
+--------------------------------
+人物分类列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/find/agency/categoryid/2
+ajax请求，类型get
+
+请求的参数：
+{
+	categoryid:2 分类id
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+返回：
+{
+list: [
+{
+id: "8",
+user_nicename: "测试4",
+title: "头衔美女",
+avatar: "2016062756529810.png",
+answer_count: "0", //回答数量
+listen_count: "1",//收听数量
+listen_userid:"8" //有值表示已经收听 空表示未收听
+},
+……
+],
+pages: {
+page: 1,
+page_size: 10,
+page_count: 1
+},
+referer: "",
+state: "success"
+}
+
+
+--------------------------------
+问题分类列表
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/find/question_book_list/categoryid/2
+请求的参数：
+{
+	"categoryid":2 分类id
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+返回：
+{
+list: [
+{
+	questionid: "12",
+	question: "如果生命只剩下最后的60秒，你想对这个世界说些什么？",
+	type: "1",
+	open: "1",
+	orderid: "6",
+	create_time: "2016-06-28 18:01:29",
+	answer: "9/2016070110248579.mp3",
+	answer_time: "2016-06-28 18:01:29",
+	answer_long: "30",
+	answer_userid: "8",
+	valid_time: "2000-01-01 00:00:00",
+	listened_count: "3",
+	like_count: "0",
+	question_userid: "9",
+	id: "8",
+	user_nicename: "测试4",
+	title: "头衔美女",
+	avatar: "2016062756529810.png"
+},
+……
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+},
+
+}
+
+
+--------------------------------
+讨论 （多人回答）
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/find/life
+请求的参数：
+{
+	"sort":"new",//排序：new最新，hot热门
+	"page":1, //当前页
+	"page_size":10 //单页数量
+}
+返回：
+{
+list: [
+{
+	answerid: "19",
+	answer: "13/2016072556499849.mp3",
+	answer_time: "2016-07-25 16:43:20",
+	answer_long: "5",//语音时长
+	answer_userid: "13",//回答者id
+	valid_time: "2100-01-01 00:00:00",
+	listened_count: "1",
+	like_count: "0",
+	questionid: "30",
+	id: "13",//用户id
+	user_nicename: "biao",//用户昵称
+	title: "主治医师，讲师，国家二级心理咨询师",//用户头衔
+	avatar: "2016072248491005.png"
+}
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+}
+}
+
+
+--------------------------------
+往期
+//请求的url
+http://lamp.chinacloudapp.cn/index.php/wechat/find/past_talk
+
+返回：
+{
+list: [
+{
+	questionid: "30",
+	question: "无法明确自己为何压抑的情况下，如何消除职场中的焦虑情绪？介绍一个发泄膨胀愤慨的可行方法。",
+	type: "0",
+	open: "1",
+	orderid: "0",
+	create_time: "2016-07-25 15:51:30",
+	question_userid: "13",
+	nature: "3",
+	end_time: "2016-08-24 15:51:26",
+	answer_count: "1",
+	listened_total: "1"
+}
+],
+pages: {
+	page: 1,
+	page_size: 10,
+	page_count: 1
+}
+}

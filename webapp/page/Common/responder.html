@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:20px;">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="format-detection" content="telephone=no"/>
+	<title>回答者(响应者)</title>
+	<link rel="stylesheet" type="text/css" href="../../res/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../../res/css/responder.css"/>
+	<script src="../../res/lib/jquery-1.8.3.js"></script>
+	<script src="../../res/js/base.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div id="detail">
+			<div class="selfinfo">
+				<a  class='icon' href="">
+					<div class="avatar avatarsize">
+						<img class="avatarImg avatarsize" src="../../res/images/questionericon.jpg">
+						<img class="verified verifiedsize" src="../../res/images/sign.jpg"></div>
+				</a>
+				<p class="tutor-name">张宏杰</p>
+				<p class="tutor-title">心理咨询师、插画师</p>
+				<p class="tutor-desc">心理咨询师，主要做心理动力学取向个体和团体咨询，可以用来拓宽思路。知识浩如烟海，我这里力所能及的回答心理咨询科普类提问！</p>
+				<div class="content">
+					<a class="listen-btn "><!-- ready-listen-btn --> 
+						<span class="icon"></span>
+						<span class="btntext ">收听</span>
+					</a>
+					<span class="tutor-num">92人收听</span>
+				</div>
+			</div>
+		</div>
+		<div id="Question">
+			<div class="questioncontent">
+				<form class="question-form">
+					<div class="text-wrap">
+						<textarea maxlength="60" placeholder="向秦琳提问，等Ta语音回答；超过48小时未回答，将按支付路径全额退款。被回答后可免费向Ta追问."></textarea>
+						<span class="counter">0/60</span>
+					</div>
+					<div class="tips">
+						<label>
+							<input type="checkbox" checked="">
+							<span>公开提问，答案每被偷偷听1次，你从中分成￥0.5</span>
+						</label>
+						<span class="read-me">说明</span>
+					</div>
+					<div class="price">
+						<span>￥5</span>
+					</div>
+					<div class="btn-panel">
+						<button class="btn-submit" type="submit">写好了</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="otherQuestions">
+			<div>
+				<div class="header-bar">
+					<p class="left">
+						<span>回答了9个问题，总收入150</span>
+					</p>
+					<div class="right">
+						<a class="order-btn" href="javascript:;" >最新</a>
+						<span class="margin-gap" style="margin: 0 -.3rem">｜</span>
+						<a class="order-btn current" href="javascript:;">默认</a>
+					</div>
+				</div>
+				<ul>
+					<li class="questionstyle2">
+						<div class="a-question">
+							<div class="question-asker">
+								<a href="./responder.html" class="left">
+									<div class="avatar avatarsize">
+										<img class="avatarImg avatarsize" src="../../res/images/questionericon.jpg"></div>
+								</a>
+								<a href="./question_answer.html">
+									<div class="question-content">
+										<p>任老师您好，我是今年毕业生，对创业很感兴趣，应该是去自己想要的对自己创业有帮助的学校，还是去爸妈认为的好学校？</p>
+										<p>
+											<span class="question-price">￥3.88</span>
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="question-answer">
+							<div class="avatar avatarsize">
+								<img class="avatarImg avatarsize" src="../../res/images/questionericon.jpg"/>				
+							</div>
+							<a href="">
+								<div class="question-voice">
+									<span class="bubble bubble-red">
+										<span class="bubble-tail"></span>
+										<span class="wave3"></span>
+										<span class="bubble-price">1元偷偷听</span>
+									</span>
+								</div>
+							</a>
+							<div class="question-duration">
+								<span >60"</span>
+							</div>
+						</div>
+						<div class="question-status">
+							<span class="count" > <i class="like-icon like-icon-gray"></i>
+								<span></span>
+								<span>10</span>
+							</span>
+							<span class="count" >
+								<span >听过</span>
+								<span d>111</span>
+							</span>
+							<span class="date" >1天前</span>
+						</div>
+					</li>
+					<li class="loading">正在加载...</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footerbar">
+		<nav class="main">
+			<li class="fb-item"><a  href="../Hot/question_board.html">热门</a></li>
+			<li class="fb-item"><a  href="../Listen/listen.html">收听</a></li>
+			<li class="fb-item"><a  href="../Find/figure_book.html">发现</a></li>
+			<li class="fb-item"><a href="../My/index.html">我的</a></li>
+		</nav>
+	</div>
+
+	<!--- 二维扫码 服务端动态生成 默认隐藏模版-->
+	<!-- <div id="layermbox1" class="layermbox layermbox0 hide" index="1">
+		<div class="laymshade"></div>
+		<div class="layermmain">
+			<div class="section">
+				<div class="layermchild layer-wx-qrcode layermanim">
+					<div class="layermcont">
+						<p>微信扫一扫，进入下一步</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!--头像弹框模版-->
+	<!-- <div id="layermbox2" class="layermbox layermbox0 hide" index="2">
+		<div class="laymshade"></div>
+		<div class="layermmain">
+			<div class="section">
+				<div class="layermchild layer-transparent layermanim" style="border:none;box-shadow:none">
+					<div class="layermcont">
+						<a href="javascript:;" class="zoomedAvatar">
+							<img src="../../res/images/questionericon.jpg" style="width: 100%"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+  <script src="../../res/js/responder.js"></script>
+</body>
+</html>

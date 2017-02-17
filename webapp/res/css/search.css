@@ -1,0 +1,166 @@
+/**搜索**/
+.searchheader{
+	width: 100%;
+}
+.searchheader .searchbar form{
+    background:#fff;
+	padding:.5rem 3.8rem .5rem .75rem;
+	position:relative;
+	z-index:2;
+}
+
+.searchheader .searchbar form div{
+	border:1px solid #CACACA;
+	border-radius:.2rem;
+	padding-left:.7rem;
+	height:2rem;
+	line-height:2rem;
+	position:relative;
+}
+
+.searchheader .searchbar form div input{
+	width: 95%; 
+	height: 1rem; 
+	line-height: 1rem; 
+	font-size: 0.8rem; 
+	outline: none; 
+	box-shadow: none; 
+	-webkit-appearance: none; 
+	border: none; 
+	transition: opacity 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); 
+	opacity: 1;
+}
+.searchheader .searchbar form button{
+	right: 0.4rem; 
+	position: absolute; 
+	top: 0.5rem; 
+	border-radius: 0.2rem; 
+	width: 3rem; 
+	height: 2rem; 
+	line-height: 2rem; 
+	font-size: 0.75rem; 
+	cursor: pointer; 
+	border: 1px solid rgb(248, 95, 72); 
+	color: rgb(255, 255, 255); 
+	opacity: 1; 
+	box-sizing: content-box; 
+	background-color: rgb(248, 95, 72);
+}
+
+
+/**搜索答主*/
+.searchcontainer .search .searchtitle{
+      font-size: .65rem;
+      color: #999;
+}
+.searchcontainer .search a{
+	display: block;
+}
+.searchcontainer .search li{
+	padding: .675rem;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+.searchcontainer .search .summary{
+	display: inline-block;
+    vertical-align: middle;
+    color: #999;
+    font-size: .8rem;
+}
+.searchcontainer .search .summax{
+	max-width: 13rem;
+}
+
+.searchcontainer .summary .content{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.searchcontainer .summary .nickname{
+	color: #3f3f3f;
+	line-height: 1.3rem;
+}
+.searchcontainer .summary .describe{
+   color: #999;
+}
+.searchcontainer .search .avatar{
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-right:.8rem; 
+}
+
+.searchcontainer .search .searchend a{
+    display: block;
+    color: #1ccda6;
+    background: url(../images/rightarrow.jpg) no-repeat;
+    background-position: 100% 50%;
+    background-size: .325rem .65rem;
+    font-size: .7rem;
+}
+.searchcontainer .summary{
+	display: inline-block;
+    vertical-align: middle;
+    color: #999;
+}
+.searchcontainer .summary .question {
+	color: #3f3f3f;
+    font-size: .8rem;
+    line-height: 1rem
+}
+.searchcontainer .summary .reply{
+	font-size: .65rem;
+    line-height: 1.1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 16.4rem;
+}
+.searchcontainer .last{
+	margin-bottom: 4rem;
+}
+.searchcontainer .search{
+	margin-bottom: .3rem;
+}
+.searchcontainer .last{
+	margin-bottom: 4rem;
+}
+.nosearchresults{
+	text-align: center;
+	padding: 3.6rem 2.875rem;
+}
+.nosearchresults img{
+	display: inline-block;
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-bottom: 1rem;
+}
+.nosearchresults p{
+	font-size: .8rem;
+	line-height: 1.1rem;
+	margin-bottom: 1.65rem;
+	color:#999
+}
+.nosearchresults a{
+   display: inline-block;
+   line-height: 2.2rem;
+   width: 8.67rem;
+   background-color: #F85F48;
+   border:1px solid #F85F48;
+   font-size:.75rem;
+   color:#fff;
+   text-decoration:none;
+   text-align: center;
+   border-radius:.3rem;
+}
+
+.searchcontainer .gapy{
+	margin-bottom: 4rem;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="format-detection" content="telephone=no"/>
+	<title>发现问题</title>
+	<link rel="stylesheet" href="../../res/css/base.css"/>
+	<link rel="stylesheet" href="../../res/css/book.css"/>
+	<script src="../../res/lib/jquery-1.8.3.js"></script>
+	<script src="../../res/js/base.js"></script>
+</head>
+<body>
+	<header class="header white">
+		<!--搜索-->
+		<div id="search" style="display:none">
+			<section class="searchbar">
+				<form action="../Common/search.html">
+					<a id='searchclose' href="javascript:(0)"></a>
+					<div>
+						<input name="key" maxlength="30" placeholder="搜索感兴趣的人和问题" autocomplete="off">
+					</div>
+					<button  class='submit' type="submit">搜索</button>
+				</form>
+			</section>
+			<div id="searchmask"></div>
+		</div>
+		<div class="main">
+			<nav class="header-nav">
+				<a class="" href="./figure_book.html">人物</a>
+				<a class="current" href="./question_book.html">问题</a>
+				<a class="" href="./life_book.html">生命分答</a>
+			</nav>
+			<a class="search-btn" href="javascript:;" id="searchTrigger"></a>
+		</div>
+	</header>
+	<div class="main">
+
+	<div class="question-recommend-header">
+		<a href="./questionbooklist.html">
+			<h2>分答精选</h2>
+			<h3>那些千人听过的好问题</h3>
+			<span class="question-count">15个问题</span>
+			<div class="question-content">
+				<h4>我是命理测算师，测算过你的命盘，但没有时辰颇多偏差。很想知道你和你家人是否算过命，对算命有什么看法？</h4>
+				<p class="question-respondent">答主：王思聪 | 网红，投资人，哲学家</p>
+			</div>
+		</a>
+	</div>
+		<div class="question-recommendcontainer">
+			<ul class="question-recommend">
+				<li class="a-recommend">
+					<a href="./question_book_list.html">
+						<div class="question-summary">
+							<h3 class="question-name">「高考志愿」名师教你精准填报</h3>
+							<span class="question-count">
+								<span>19</span>
+								<span>个问题</span>
+							</span>
+						</div>
+					</a>
+				</li>
+				<li class="a-recommend">
+					<a href="./question_book_list.html">
+						<div class="question-summary">
+							<h3 class="question-name">「高考志愿」名师教你精准填报</h3>
+							<span class="question-count">
+								<span>19</span>
+								<span>个问题</span>
+							</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	
+	</div>
+	<div class="footerbar">
+		<nav class="main">
+			<li class="fb-item"><a  href="../Hot/question_board.html">热门</a></li>
+			<li class="fb-item"><a  href="../Listen/listen.html">收听</a></li>
+			<li class="fb-item"><a  class='fb-current' href="./figure_book.html">发现</a></li>
+			<li class="fb-item"><a href="../My/index.html">我的</a></li>
+		</nav>
+	</div>
+</body>
+</html>

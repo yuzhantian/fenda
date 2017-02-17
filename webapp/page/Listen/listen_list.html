@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="format-detection" content="telephone=no"/>
+	<title>收听列表</title>
+	<link rel="stylesheet" href="../../res/css/base.css"/>
+	<link rel="stylesheet" href="../../res/css/listen.css"/>
+	<script src="../../res/lib/jquery-1.8.3.js"></script>
+	<script src="../../res/js/base.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div id="search" style="display:none">
+			<section class="searchbar">
+				<form action="../Common/search.html">
+					<a id='searchclose' href="javascript:(0)"></a>
+					<div>
+						<input name="key" maxlength="30" placeholder="搜索感兴趣的人和问题" autocomplete="off">
+					</div>
+					<button  class='submit' type="submit">搜索</button>
+				</form>
+			</section>
+			<div id="searchmask"></div>
+		</div>
+		<div class="main">
+			<nav class="header-nav">
+				<a class="" href="./listen.html">最新问题</a>
+				<a class="current" href="./listen_list.html">收听列表</a>
+			</nav>
+			<a class="search-btn" href="javascript:;" id="searchTrigger"></a>
+		</div>
+	</header>
+	<!--最新问题列表-->
+	<div id="lastnewquestion" class="main">
+	<!--无最新问题反馈-->
+		<div id='nonewquestion' class="feedbackcontainer hide">
+			<div class="container">
+
+				<img src="../../res/images/sadface.jpg">	
+
+				<p>没有最新动态哦</p>
+				<a href="./listen_list.html">去收听列表看看</a>
+			</div>
+		</div>
+	</div>
+	<!--收听列表-->
+	<div id="listenlist" class="listenlistcontainer">
+		<div class="tips"><p>还没有收听，看看下面是否有你感兴趣的人？</p></div>
+
+       <div class="tips"><p>我收听的人 3</p></div>
+        <!--收听列表-->
+		<ul class="leaders">
+			<li class="a-leader">
+				<a class="AS" href="../Common/responder.html" id="1">
+					<div class="avatar avatarsbigsize">
+						<img class="avatarImg avatarsbigsize" src="../../res/images/questionericon.jpg">		
+						<span></span>
+					</div>
+					<div class="leader-content">
+						<h3 class="leader-nickname">龚琳娜</h3>
+						<p class="leader-title">歌唱家，中国新艺术音乐创</p>
+					</div>
+				</a>
+			</li>
+			<li class="a-leader">
+				<a class="AS" href="../Common/responder.html" id="2">
+					<div class="avatar avatarsbigsize">
+						<img class="avatarImg avatarsbigsize" src="../../res/images/questionericon.jpg" >		
+						<span></span>
+					</div>
+					<div class="leader-content">
+						<h3 class="leader-nickname">龚琳娜</h3>
+						<p class="leader-title">歌唱家，中国新艺术音乐创</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+       <div class="tips"><p>为你推荐</p></div>
+		<!--推荐收听列表-->
+		<ul class="leaders">
+			<li class="a-leader">
+				<a class="AS" href="../Common/responder.html" id="3">
+					<div class="avatar avatarsbigsize">
+						<img class="avatarImg avatarsbigsize" src="../../res/images/questionericon.jpg" >		
+						<span></span>
+					</div>
+					<div class="leader-content">
+						<h3 class="leader-nickname">龚琳娜</h3>
+						<p class="leader-title">歌唱家，中国新艺术音乐创</p>
+						<p class="leader-summary">我是贾跃</p>
+					</div>
+				</a>
+				<div class="leader-deal">
+					<a class="listen-btn">
+						<div>
+							<span class="icon"></span>
+							<span class="btntext ">收听</span>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li class="a-leader">
+				<a class="AS" href="../Common/responder.html" id="4">
+					<div class="avatar avatarsbigsize">
+						<img class="avatarImg avatarsbigsize" src="../../res/images/questionericon.jpg" >		
+						<span></span>
+					</div>
+					<div class="leader-content">
+						<h3 class="leader-nickname">龚琳娜</h3>
+						<p class="leader-title">歌唱家，中国新艺术音乐创</p>
+						<p class="leader-summary">我是贾跃</p>
+					</div>
+				</a>
+				<div class="leader-deal">
+					<a class="ready-listen-btn">
+						<div>
+							<span class="icon"></span>
+							<span class="btntext">已收听</span>
+						</div>
+					</a>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+	<div class="footerbar">
+		<nav class="main">
+			<li class="fb-item"><a  href="../Hot/question_board.html">热门</a></li>
+			<li class="fb-item"><a class='fb-current' href="./listen.html">收听</a></li>
+			<li class="fb-item"><a href="../Find/figure_book.html">发现</a></li>
+			<li class="fb-item"><a href="../My/index.html">我的</a></li>
+		</nav>
+	</div>
+	<script src="../../res/js/listen.js"></script>
+</body>
+</html>

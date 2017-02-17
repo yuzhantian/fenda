@@ -1,0 +1,458 @@
+/***签名集(人物 问题)***/
+.book-recommend {
+    width: 100%;
+    max-width: 768px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: .5rem 0 .3rem;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+.book-recommend .a-recommend {
+    float: left;
+    margin: 0 2.5% 1rem;
+    width: 20%;
+    position: relative;
+}
+
+.book-recommend .a-recommend img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+.book-recommend .a-recommend .book-avatar{
+	position: absolute;
+	left:0;
+	top: 0;
+}
+.book-recommend .a-recommend .book-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgba(0,0,0,.3);
+}
+.book-recommend .a-recommend .book-nickname{
+	position: absolute;
+	left:10%;
+	bottom: .8rem;
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    color: #fff;
+}
+
+.book{
+	background: #fff;
+    margin-bottom: 4rem;
+}
+
+.book .a-book {
+    position: relative;
+    padding: .6rem .85rem;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.book .a-book a {
+    display: block;
+    overflow: hidden;
+    color: #999;
+    background: url(../images/rightarrow.jpg) no-repeat;
+    background-position: 100% 50%;
+    background-size: .325rem .65rem;
+}
+.book .a-book .book-name {
+    font-size: .8rem;
+    color: #3f3f3f;
+    line-height: 1.1rem;
+    margin-bottom: .25rem;
+}
+.book .a-book .book-count {
+    margin-right: .5rem;
+    font-size: .75rem;
+    color: #999;
+    line-height: 1rem;
+}
+.book .a-book .book-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+    float: left;
+    margin-right: .75rem;
+}
+.book .a-book .book-summary {
+    display: inline-block;
+}
+
+/**明星 结构组织等签名列表***/
+.figurebook-header, .questionbook-header {
+    background: #fff;
+    padding: .75rem;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+.figurebook-header .book-title,.questionbook-header .book-title {
+    color: #3f3f3f;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-bottom: .25rem;
+}
+.figurebook-header .book-count, .questionbook-header .book-count{
+    color: #999;
+    font-size: .65rem;
+}
+
+.book-figure {
+    background: #fff;
+    margin-bottom: 4rem;
+}
+.book-figure .a-figure {
+    border-bottom: 1px solid #e5e5e5;
+    padding: .75rem .5rem .75rem .75rem;
+    overflow: hidden;
+}
+
+.a-figure .avatarsbigsize{
+    width: 2.25rem;
+    height: 2.25rem;
+
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin-right: .5rem;
+}
+.book-figure .a-figure .figure-summary {
+    float: left;
+}
+.book-figure .a-figure .figure-summary .figure-desc {
+    font-size: .8rem;
+    color: #3f3f3f;
+    margin-bottom: .2rem;
+    max-width: 10.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.book-figure .a-figure .figure-summary .figure-desc .leader-title {
+    font-size: .65rem;
+    color: #999;
+    display: inline-black;
+    vertical-align: baseline;
+    margin-left: .2rem;
+}
+.book-figure .a-figure .figure-summary .state {
+    font-size: .65rem;
+    color: #999;
+}
+
+
+.book-figure .a-figure .book-figure-deal {
+    float: right;
+    padding-top: .5rem;
+}
+
+/**以收听按钮变灰，文字描述修改**/
+.book-figure .a-figure .book-figure-deal .ready-listen-btn{
+    float: right;
+    display: inline-block;
+    border-radius: .2rem;
+    line-height: 1.35rem;
+    height: 1.3rem;
+    text-align: center;
+    width: 3.5rem;
+    border: 1px solid #B7A9A9;
+    background: #C3D8A1;
+    color: #5A4040;
+    text-decoration: none;
+    font-size: .7rem;
+    margin-left: .5rem; 
+    vertical-align: middle;
+    vertical-align: center;
+}
+/**图标**/
+.book-figure .a-figure .book-figure-deal .icon{
+	 display:inline-block;
+	 vertical-align:middle;
+	 width:.7rem;
+	 height:.7rem;
+	 margin-right:.2rem;
+	 background-size:.7rem .7rem;
+	 background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAAXNSR0IArs4c6QAABCVJREFUaAXtmj1rFFEUhrOCgRAjiBIxGIQEtFcLK8VfoIkg8YeIlSZoZfAXaKlGJSCmECyN1ho0oqSIhWKSxsZ0FsbnXWZ3MzP3zOedmSzkwMvMnHPvec+5c7/m7rYGPMnOzs4Erq6A82AswAmuIyBJtjFugo0AH7gutVqtda7NCkmNgrvgM/AtqziU79Has4R0GNwGf0DVsg3BLDhUS6IQTYFNULdsQThdaZIQ6K39qzuzXXzingUtr4nicAi8AHtFFglkyFuSOMua3EfK3gGXwWmQOm5UJiirOqorH1lESZZ/kzgRaZqI7IyvFpUvIJ9pMleKE+/TQP3eku8YLpQiSags30Aclii2awkubBMVh0HSbPkW+zHbgx8LHEeBuCzR7Jo6FGLRUGnW8ohehAdjlSpSiCvg5OKUuVzUuNAORQusS9RlKn9z0YDFCazuqliPR+uYzxTWFsmSysacGVBgICCNSUvupdXv2vGwanhZ7BZq6Ia4rNn1S6aQcDBpJCe1t6UgUzCOQoohIb7JaJUDUQXPVx06qVb4hFkzbLWpgxhWDMJY7K4EzxqVXxn6JtRLBum5qN6VoD5WXfLepWxI987g1Qd2SPIk+CtUs9kHKxbr5fSiZQBb61/+3ULPrdc7YhwxJhodf4QkthtXxVCJ4IHBHSvrKleXLmucri5aV4y18OwnWEszV0iy/wYrbNxaXPfzG/yapYX6OcGLJKhj/nxiLKBJ6g2MC+BkPqbypeE8DJZBV1K9dkvmv/lNlSaS1Jnt6064ZoIUOADmOwULXhdMgoIG4hgM4lJPEe5Lt9sdzzqzeQ6cu7B2WWxlk5N/axO8O55c90Zc81EnlNMLehTVt58x6AcVL+IkKKEkKNfRpX5LzCQtHOj47xuIfe5n8hAp5HtTrlaPULQfs/JomZgCVnI/sd0AY3Io4f4UeAP6Q2ggTfEu+YHyiCsL9OOuCtK5ypfRlebBwZrhZCYpMKPOnktQXdT6zF9OSrBfbJpknK0ejDczj6L1TIeGoSxPP+9FjSYJqxtLkDfT2aG41jm9uLaEw+09dezGVT61cRlsrIsqAMK92Qu5krv5JhPUbiR2UOs5zc3GuqjnREx3TSb4xIzKn+HxgDFInUvHbt6i9To+NAFoHILEScbiSdGHJhkdd7uO5bX/1L8AnSIClyFt/XTVSdKV5VEXtT49LiUR94tNCVoHN+o+1ma79qOJog2qBK0fNsexfSLJGdCdzrmX/mFRwrrraR3U+YY+eCd8kO+5MUhAf0ms6h2Fj7Yr5ENddIAkX3J5UMhDuJI1YYVL1fjUTjDgu8W1bJJVfENuOdrDpXMUc6gYk/qH4TrIK5Uc/BKE6zgzdmzoSMVW4VQHqdfBU6AjDet3e0ztw9hnXCtZOvDb2fFsBFztzyA7+rDlPzjkppMbI4I1AAAAAElFTkSuQmCC); 
+}
+
+.book-figure .a-figure .book-figure-deal .listen-btn {
+    display: inline-block;
+    border-radius: .2rem;
+    line-height: 1.35rem;
+    height: 1.3rem;
+    text-align: center;
+    width: 3.5rem;
+    border: 1px solid #F85F48;
+    background: #F85F48;
+    color: #fff;
+    text-decoration: none;
+    font-size: .7rem;
+    margin-left: .5rem; 
+    vertical-align: middle;
+    vertical-align: center;
+}
+
+#newquestionlist .loading {
+    font-size: .65rem;
+    color: #999;
+    text-align: center;
+    padding-top: 1rem;
+    background: #f5f5f5;
+}
+
+
+
+/**问题推荐**/
+.question-recommend-header {
+    max-width: 768px;
+    overflow: hidden;
+    margin: .5rem auto;
+    padding: 0 .85rem .75rem;
+    background: #fff;
+    line-height: 1.58;
+}
+.question-recommend-header a {
+    color: #3f3f3f;
+}
+.question-recommend-header h2 {
+    padding: .4rem;
+    text-align: center;
+    font-size: .8rem;
+}
+.question-recommend-header h3 {
+    line-height: 1.2;
+    font-size: .9rem;
+}
+.question-recommend-header .question-count {
+    margin-right: .5rem;
+    font-size: .75rem;
+    color: #999;
+    line-height: 1rem;
+}
+.question-recommend-header .question-content {
+    position: relative;
+    margin-top: .3rem;
+    border-top: 1px solid #e5e5e5;
+    padding-top: .5rem;
+    color: #999;
+    font-size: .75rem;
+}
+.question-recommend-header .question-content:before {
+    content: '';
+    position: absolute;
+    top: -.2rem;
+    left: 1.3rem;
+    border-top: 1px solid #e5e5e5;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #e5e5e5;
+    width: .3rem;
+    height: .3rem;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.question-recommend-header .question-content .question-respondent {
+    color: #ababab;
+    font-size: .65rem;
+}
+
+.question-recommend {
+    background: #fff;
+    margin-bottom: 4rem;
+}
+.question-recommend .a-recommend {
+    position: relative;
+    padding: .6rem .85rem;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+
+.question-recommend .a-recommend a {
+    display: block;
+    overflow: hidden;
+    color: #999;
+    background: url(../images/rightarrow.jpg) no-repeat;
+    background-position: 100% 50%;
+    background-size: .325rem .65rem;
+}
+.question-recommend .a-recommend .question-summary {
+    float: left;
+}
+
+/***发现列表问题**/
+
+.book-question{
+    list-style-type: none;
+    margin-bottom: 4rem;
+}
+.book-question .a-question{
+    background-color: #fff;
+    padding: .5rem;
+    margin-bottom: .6rem;
+}
+
+.book-question .a-question .question-content {
+    margin-bottom: .3rem;
+    line-height: 1.1rem;
+    color: #3f3f3f;
+}
+.book-question .a-question .question-content.reset {
+    margin-bottom: .1rem;
+}
+.book-question .a-question .question-content .text{
+    margin-bottom: .3rem;
+    line-height: 1.1rem;
+    color: #3f3f3f;
+}
+.book-question .a-question .question-content .question-respondent{
+     color: #999;
+    font-size: .65rem;
+}
+.answer {
+    margin-top: .65rem;
+    margin-bottom: .3rem;
+    overflow: hidden;
+}
+.answer.reset {
+    margin-top: .3rem;
+    margin-bottom: 0rem;
+}
+
+.answer .avatarsbigsize{
+     width: 1.85rem;
+    height: 1.85rem;
+}
+.answer .verified.verifiedsize{
+    width:.883rem;
+    height:.883rem;
+}
+.answer .voice{
+    display: inline-block;
+    margin-left: .7rem;
+}
+.answer .duration {
+    display: inline-block;
+    line-height: 2.2rem;
+    color: #c3c3c3;
+    font-size: .8rem;
+}
+.footer{
+    font-size: .65rem;
+    overflow: hidden;
+    color: #ababab;
+}
+.footer .count, .footer .date {
+    display: inline-block;
+    height: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.footer .count{
+    float: right;
+    margin-left: .5rem;
+}
+.like-icon-gray {
+    background-image: url(data:image/png;base64,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);
+}
+.like-icon {
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: -2%;
+}
+.content .tutor-card{
+    padding: .75rem .6rem;
+    background: #fff;
+}
+
+/**生命分答beging**/
+.life .banner {
+    padding: 0 .75rem .525rem;
+    background: #fff;
+}
+.life .banner .video {
+    white-space: normal;
+    font-size: 18.018px;
+    text-align: center;
+    line-height: normal;
+}
+.life .banner .video video{
+    width: 100%;
+    height: 100%;
+}
+.life .banner .description {
+    margin-top: .37rem;
+    font-size: .65rem;
+    line-height: .85rem;
+    background: #fff;
+    color: #999;
+    font-weight: 400;
+}
+.life .banner .description .more {
+    color: #f85f48;
+}
+.life .banner .footer {
+    margin: .45rem 0 0;
+    color: #999;
+    font-size: .65rem;
+    line-height: .65rem;
+}
+.life .banner .footer .right {
+    float: right;
+}
+.life .guide {
+    padding-bottom: .7rem;
+    text-align: center;
+}
+.life .guide .title {
+    height: 4.4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin: 0 auto .21rem;
+    max-width: 414px;
+}
+.life .guide .btn {
+    display: inline-block;
+    height: 1.6rem;
+    padding: 0 1.25rem;
+    background: #f85f48;
+    color: #fff;
+    font-size: .75rem;
+    line-height: 1.6rem;
+    border-radius: .2rem;
+}
+
+.life .nav {
+    height: 2rem;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: .2rem;
+}
+.life .guide .btn, .life .nav {
+    text-align: center;
+}
+.life .nav .item {
+    line-height: 1.75rem;
+    display: inline-block;
+    font-size: .75rem;
+    margin: 0 1.25rem;
+    color: #999;
+}
+.life .nav .current {
+    color: #f85f48;
+    border-bottom: .15rem solid #f85f48;
+}
+/**生命分答end**/

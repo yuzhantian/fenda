@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="format-detection" content="telephone=no"/>
+	<title>收听-最新问题</title>
+	<link rel="stylesheet" href="../../res/css/base.css"/>
+	<link rel="stylesheet" href="../../res/css/listen.css"/>
+	<script src="../../res/lib/jquery-1.8.3.js"></script>
+	<script src="../../res/js/base.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div id="search" style="display:none">
+			<section class="searchbar" >
+				<form action="../Common/search.html">
+					<a id='searchclose' href="javascript:(0)"></a>
+					<div>
+						<input name="key" maxlength="30" placeholder="搜索感兴趣的人和问题" autocomplete="off">
+					</div>
+					<button  class='submit' type="submit">搜索</button>
+				</form>
+			</section>
+			<div id="searchmask"></div>
+		</div>
+		<div class="main">
+			<nav class="header-nav">
+				<a class="current" href="./listen.html">最新问题</a>
+				<a class="" href="./listen_list.html">收听列表</a>
+			</nav>
+			<a class="search-btn" id="searchTrigger"></a>
+		</div>
+	</header>
+	<!--最新问题列表-->
+	<div id="lastnewquestion" class="main">
+	<!--无最新问题反馈-->
+		<div id='nonewquestion' class="feedbackcontainer hide">
+			<div class="container">
+				<img src="../../res/images/sadface.jpg">	
+				<p>没有最新动态哦</p>
+				<a href="./listen_list.html">去收听列表看看</a>
+			</div>
+		</div>
+		<!--最新问题列表（先要收听才有）-->
+		<div id="newquestionlist" class="questionlistcontainer">
+			<ul class="last">
+				<li class="content">
+					<a href="../Common/question_answer.html">
+						<p class="totorcontent">
+							<span class="nicename">王峰</span>
+							<span class="gap"> | </span>
+							<span class="job">歌者，创作者等</span>
+							<span>回答了</span>
+						</p>
+						<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学</p>
+						<div class="clearfix">
+						   <span class="left">2天前</span>
+						   <span class="right">听过<strong> 39</strong></span>
+						</div>
+					</a>
+				</li>
+				<li class="content">
+					<a href="../Common/question_answer.html">
+						<p class="totorcontent">
+							<span class="nicename">王峰</span>
+							<span class="gap"> | </span>
+							<span class="job">歌者，创作者等</span>
+							<span>回答了</span>
+						</p>
+						<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学</p>
+						<div class="clearfix">
+						   <span class="left">2天前</span>
+						   <span class="right">听过<strong> 39</strong></span>
+						</div>
+					</a>
+				</li>
+				<li class="content">
+					<a href="../Common/question_answer.html">
+						<p class="totorcontent">
+							<span class="nicename">王峰</span>
+							<span class="gap"> | </span>
+							<span class="job">歌者，创作者等</span>
+							<span>回答了</span>
+						</p>
+						<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学</p>
+						<div class="clearfix">
+						   <span class="left">2天前</span>
+						   <span class="right">听过<strong> 39</strong></span>
+						</div>
+					</a>
+				</li>
+				<li class="content">
+					<a href="../Common/question_answer.html">
+						<p class="totorcontent">
+							<span class="nicename">王峰</span>
+							<span class="gap"> | </span>
+							<span class="job">歌者，创作者等</span>
+							<span>回答了</span>
+						</p>
+						<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学</p>
+						<div class="clearfix">
+						   <span class="left">2天前</span>
+						   <span class="right">听过<strong> 39</strong></span>
+						</div>
+					</a>
+				</li>
+				<li class="content">
+					<a href="../Common/question_answer.html">
+						<p class="totorcontent">
+							<span class="nicename">王峰</span>
+							<span class="gap"> | </span>
+							<span class="job">歌者，创作者等</span>
+							<span>回答了</span>
+						</p>
+						<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学</p>
+						<div class="clearfix">
+						   <span class="left">2天前</span>
+						   <span class="right">听过<strong> 39</strong></span>
+						</div>
+					</a>
+				</li>
+				<li class="content">
+					<a href="../Common/question_answer.html">
+						<p class="totorcontent">
+							<span class="nicename">王峰</span>
+							<span class="gap"> | </span>
+							<span class="job">歌者，创作者等</span>
+							<span>回答了</span>
+						</p>
+						<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学</p>
+						<div class="clearfix">
+						   <span class="left">2天前</span>
+						   <span class="right">听过<strong> 39</strong></span>
+						</div>
+					</a>
+				</li>
+				<li class="content">
+					<a href="../Common/question_answer.html">
+						<p class="totorcontent">
+							<span class="nicename">王峰</span>
+							<span class="gap"> | </span>
+							<span class="job">歌者，创作者等</span>
+							<span>回答了</span>
+						</p>
+						<p class="question">问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学问题我那同学</p>
+						<div class="clearfix">
+						   <span class="left">2天前</span>
+						   <span class="right">听过<strong> 39</strong></span>
+						</div>
+					</a>
+				</li>
+				
+				<li class="loading hide ">正在加载...</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--收听列表-->
+	<div id="lastnewquestion" class="main">
+		
+	</div>
+	<div class="footerbar">
+		<nav class="main">
+			<li class="fb-item"><a  href="../Hot/question_board.html">热门</a></li>
+			<li class="fb-item"><a class='fb-current' href="./listen.html">收听</a></li>
+			<li class="fb-item"><a href="../Find/figure_book.html">发现</a></li>
+			<li class="fb-item"><a href="../My/index.html">我的</a></li>
+		</nav>
+	</div>
+	<script src="../../res/js/listen.js"></script>
+</body>
+</html>
